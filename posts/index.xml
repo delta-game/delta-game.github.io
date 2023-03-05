@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on DELTΔ</title>
+    <link>https://delta-game.github.io/posts/</link>
+    <description>Recent content in Posts on DELTΔ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(C) 2023, &lt;a href=&#39;https://github.com/jostgrant&#39;&gt;@JostGrant&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://delta-game.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time Keeps On Tickin&#39;, Tickin&#39;, Tickin&#39;.</title>
+      <link>https://delta-game.github.io/posts/time/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta-game.github.io/posts/time/</guid>
+      <description>Into The Future. &amp;hellip;</description>
+      <content>&lt;h1 id=&#34;into-the-future&#34;&gt;Into The Future.&lt;/h1&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

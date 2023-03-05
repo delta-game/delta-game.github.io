@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on DELTΔ</title>
+    <link>https://delta-game.github.io/tags/</link>
+    <description>Recent content in Tags on DELTΔ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(C) 2023, &lt;a href=&#39;https://github.com/jostgrant&#39;&gt;@JostGrant&lt;/a&gt;</copyright><atom:link href="https://delta-game.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
