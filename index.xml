@@ -26,8 +26,23 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://delta-game.github.io/play/</guid>
-      <description></description>
-      <content></content>
+      <description>Title </description>
+      <content>&lt;h1 id=&#34;title&#34;&gt;Title&lt;/h1&gt;
+&lt;iframe id=&#34;odysee-iframe&#34; src=&#34;https://odysee.com/$/embed/@buttnut:6/evaweenian:1?r=5pavSH3e5qknV81RNsnhNHcQHxesVPzF&#34; width=&#34;100%&#34; height=&#34;500&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://delta-game.github.io/showcase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta-game.github.io/showcase/</guid>
+      <description>This will be a currated showcase, of interesting creations people have made in DELTΔ. Probably will try to add a few of the latest to the frontpage in a dedicated section eventually.</description>
+      <content>&lt;p&gt;This will be a currated showcase, of interesting creations people have made in DELTΔ.
+Probably will try to add a few of the latest to the frontpage in a dedicated section eventually.&lt;/p&gt;
+</content>
     </item>
     
     <item>
