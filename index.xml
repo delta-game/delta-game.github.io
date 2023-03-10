@@ -33,11 +33,12 @@ Prerequisites Before you start, you need to make sure that you have the followin
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 &lt;p&gt;Before you start, you need to make sure that you have the following prerequisites installed:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GoLang 1.19 or later (you can download it from &lt;a href=&#34;https://golang.org/dl/&#34;&gt;here&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;GoLang 1.19 or later (you can download it &lt;a href=&#34;https://golang.org/dl/&#34;&gt;here&lt;/a&gt;). For Linux &lt;strong&gt;[1]&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;The defacto package-manager for your Operating-System.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;On Windows, Chocolatey is required to use the &lt;code&gt;depends&lt;/code&gt; command. You can download it from &lt;a href=&#34;https://chocolatey.org/install&#34;&gt;here&lt;/a&gt;. On MacOSX, Homebrew is required for the same reason. You can download it &lt;a href=&#34;https://brew.sh/&#34;&gt;here&lt;/a&gt;. On Linux, your distribution&amp;rsquo;s package manager is required to install the necessary packages. Right now, we officially support Apt via Debian and Ubuntu, Pacman via Arch, and Dnf via Fedora.&lt;/p&gt;
 &lt;p&gt;Linux is the sole development platform that I use and while MacOSX is Unix-like enough where things should probably &amp;lsquo;just work&amp;rsquo; and has been confirmed early versions currently do &amp;ndash; I have no idea about Windows. So if this guide doesn&amp;rsquo;t work, it&amp;rsquo;s probably worth setting up WSL2 (Windows Subsystem for Linux 2) using the Debian image, which can be downloaded from the Microsoft Store, and trying that. You can learn more about setting up WSL2: &lt;a href=&#34;https://learn.microsoft.com/en-us/windows/wsl/install&#34;&gt;here&lt;/a&gt;, and download the Debian image: &lt;a href=&#34;https://www.microsoft.com/store/apps/9MSVKQC78PK6&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[1]&lt;/strong&gt; On Linux, check your package-manager for a &amp;ldquo;go&amp;rdquo; or &amp;ldquo;golang&amp;rdquo; package. It should be availble on all supported distros.&lt;/p&gt;
 &lt;h2 id=&#34;step-1-download-the-latest-commit&#34;&gt;Step 1: Download The Latest Commit&lt;/h2&gt;
 &lt;p&gt;First, we need to download the latest commit of DELTΔ from our GitHub repository.&lt;/p&gt;
 &lt;ol&gt;
