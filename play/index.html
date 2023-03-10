@@ -6,7 +6,8 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Title " />
+<meta name="description" content="DELTΔ: The Build Process DELTΔ is in the perpetual prototype stage. Changes are sporadic, often dramatic, and may more often than not break things. Until we have a launcher that does automatic versioning based on a given commit &amp;ndash; proceed with caution and make sure you&amp;rsquo;re backing your database files up manually. I tried to warn ya!
+Prerequisites Before you start, you need to make sure that you have the following prerequisites installed:" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 
@@ -41,7 +42,8 @@
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="">
-<meta property="og:description" content="Title " />
+<meta property="og:description" content="DELTΔ: The Build Process DELTΔ is in the perpetual prototype stage. Changes are sporadic, often dramatic, and may more often than not break things. Until we have a launcher that does automatic versioning based on a given commit &amp;ndash; proceed with caution and make sure you&amp;rsquo;re backing your database files up manually. I tried to warn ya!
+Prerequisites Before you start, you need to make sure that you have the following prerequisites installed:" />
 <meta property="og:url" content="https://delta-game.github.io/play/" />
 <meta property="og:site_name" content="DELTΔ" />
 
@@ -186,9 +188,98 @@
   
 
   <div class="post-content"><div>
-        <h1 id="title">Title<a href="#title" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<iframe id="odysee-iframe" src="https://odysee.com/$/embed/@buttnut:6/evaweenian:1?r=5pavSH3e5qknV81RNsnhNHcQHxesVPzF" width="100%" height="500" allowfullscreen></iframe>
-
+        <h1 id="deltδ-the-build-process">DELTΔ: The Build Process<a href="#deltδ-the-build-process" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>DELTΔ is in the perpetual prototype stage. Changes are sporadic, often dramatic, and may more often than not break things. Until we have a launcher that does automatic versioning based on a given commit &ndash; proceed with caution and make sure you&rsquo;re backing your database files up manually. I tried to warn ya!</p>
+<h2 id="prerequisites">Prerequisites<a href="#prerequisites" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Before you start, you need to make sure that you have the following prerequisites installed:</p>
+<ul>
+<li>GoLang 1.19 or later (you can download it from <a href="https://golang.org/dl/">here</a>)</li>
+<li>The defacto package-manager for your Operating-System.</li>
+</ul>
+<p>On Windows, Chocolatey is required to use the <code>depends</code> command. You can download it from <a href="https://chocolatey.org/install">here</a>. On MacOSX, Homebrew is required for the same reason. You can download it <a href="https://brew.sh/">here</a>. On Linux, your distribution&rsquo;s package manager is required to install the necessary packages. Right now, we officially support Apt via Debian and Ubuntu, Pacman via Arch, and Dnf via Fedora.</p>
+<p>Linux is the sole development platform that I use and while MacOSX is Unix-like enough where things should probably &lsquo;just work&rsquo; and has been confirmed early versions currently do &ndash; I have no idea about Windows. So if this guide doesn&rsquo;t work, it&rsquo;s probably worth setting up WSL2 (Windows Subsystem for Linux 2) using the Debian image, which can be downloaded from the Microsoft Store, and trying that. You can learn more about setting up WSL2: <a href="https://learn.microsoft.com/en-us/windows/wsl/install">here</a>, and download the Debian image: <a href="https://www.microsoft.com/store/apps/9MSVKQC78PK6">here</a>.</p>
+<h2 id="step-1-download-the-latest-commit">Step 1: Download The Latest Commit<a href="#step-1-download-the-latest-commit" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>First, we need to download the latest commit of DELTΔ from our GitHub repository.</p>
+<ol>
+<li>
+<p>Go to the DELTΔ repository on GitHub at <a href="https://github.com/delta-game/delta">https://github.com/delta-game/delta</a>.</p>
+</li>
+<li>
+<p>Click on the green &ldquo;Code&rdquo; button on that page and select the &ldquo;Download Zip&rdquo; option.</p>
+</li>
+<li>
+<p>Extract the downloaded ZIP file to a directory on your computer.</p>
+</li>
+<li>
+<p>Open your system&rsquo;s terminal application and navigate to the directory where you extracted the DELTΔ files using the <code>cd</code> command. For example, if you extracted the files to <code>/home/&lt;username&gt;/Downloads/delta</code>, you would run the following cmd:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Replace the &lt;username&gt; w/ ... well ya know.</span>
+</span></span><span style="display:flex;"><span>cd /home/&lt;username&gt;/Downloads/delta-main <span style="color:#75715e">#On Linux.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd /Users/&lt;username&gt;/Downloads/delta-main <span style="color:#75715e">#On MacOSX</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\&lt;</span>username&gt;<span style="color:#ae81ff">\D</span>ownloads<span style="color:#ae81ff">\d</span>elta-main <span style="color:#75715e">#On Win10+ </span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="step-2-setting-up-magefiles">Step 2: Setting Up Magefiles<a href="#step-2-setting-up-magefiles" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>To build DELTΔ, we first need to set up Magefiles.</p>
+<ol>
+<li>
+<p>We should already have GoLang installed and our terminal app opened. Now we need to run the following command, which will download and install the <code>magefile</code> executable to our <code>$GOPATH</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go install github.com/magefile/mage@latest
+</span></span></code></pre></div></li>
+<li>
+<p>To view all user facing targets, run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage help
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="step-3-grabbing-all-dependencies">Step 3: Grabbing All Dependencies<a href="#step-3-grabbing-all-dependencies" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
+<li>
+<p>This will check if all the dependencies are installed and should install any missing dependencies.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage depends
+</span></span></code></pre></div><ul>
+<li>If this fails for whatever reason, we can manually list out the command we use and can either try running it ourselves in a different terminal (possibly one with admin privs) or searching for these packages in your package-manager manually
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage pkglist <span style="color:#75715e">#this may-or-may-not be implemented atm...</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ol>
+<h2 id="step-4-building-and-running-the-binary">Step 4: Building And Running The Binary<a href="#step-4-building-and-running-the-binary" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
+<li>
+<p>To build DELTΔ, we really just need one command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> mage rerun
+</span></span></code></pre></div><pre><code> This should (re)buid and run the binary. Get it? &quot;Rerun&quot;.
+</code></pre>
+</li>
+<li>
+<p>We could even do these steps seperately as the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage build
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mage run
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="step-5-optional--miscellaneous-commands">Step 5: Optional / Miscellaneous Commands<a href="#step-5-optional--miscellaneous-commands" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>And there we have it! We should have a fully functional build of DELTΔ  &hellip; well assuming it&rsquo;s not broke upstream. lol There&rsquo;s a few other odds-and-ends we can do. These are all completely optional, but I think still nice to know about.</p>
+<ol>
+<li>
+<p>Intall it to a local directory. This will assure it will be installed in the top-level of your user directory under .DELTΔ/ that will (eventually) contain a vers/ directory of each commit you built and then &lsquo;installed&rsquo; on your machine.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage install <span style="color:#75715e"># fyi ... this currently doesn&#39;t implement a /vers directory with commit-hashes for subdirectory names lol</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Clean the local build. Let&rsquo;s assume we want to start from scratch and try to rebuild everything.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage clean
+</span></span></code></pre></div><pre><code> If you grabbed the actual git repo, and not just downloaded the zip; This pairs very well with `mage update` that should pull the latest commit. rn: it assumes we have git installed locally, but I'm hoping to move to go-get and ship it as part of the magefile proper.
+</code></pre>
+</li>
+<li>
+<p>Completely nuke your .DELTA dir. Please make sure you back up things you care about like select database files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage remove
+</span></span></code></pre></div></li>
+</ol>
+<blockquote>
+<p>Note: We&rsquo;re planning to add a video to this page that walks people through this process sooner-than-later; I promise you it&rsquo;s really that not hard to go it your own, but a lack of a single executable / binary &ndash; I get is a bit intimidating. We do also, &ldquo;eventually&rdquo; plan to have a <a href="https://github.com/delta-game/loft">proper launcher</a> to make this a no-brain(er) activity.</p>
+</blockquote>
 
       </div></div>
 
