@@ -52,7 +52,7 @@ Prerequisites Before you start, you need to make sure that you have the followin
 &lt;p&gt;Extract the downloaded ZIP file to a directory on your computer.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Open your system&amp;rsquo;s terminal application and navigate to the directory where you extracted the DELTΔ files using the &lt;code&gt;cd&lt;/code&gt; command. For example, if you extracted the files to &lt;code&gt;/home/&amp;lt;username&amp;gt;/Downloads/delta&lt;/code&gt;, you would run the following cmd:&lt;/p&gt;
+&lt;p&gt;Open your system&amp;rsquo;s terminal application and navigate to the directory where you extracted the DELTΔ files using the &lt;code&gt;cd&lt;/code&gt; command. For example, if you extracted the files to &lt;code&gt;/home/&amp;lt;username&amp;gt;/Downloads/delta-main&lt;/code&gt;, you would run the following cmd:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Replace the &amp;lt;username&amp;gt; w/ ... well ya know.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /home/&amp;lt;username&amp;gt;/Downloads/delta-main &lt;span style=&#34;color:#75715e&#34;&gt;#On Linux.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
