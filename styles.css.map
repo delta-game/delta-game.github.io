@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/grant/ORGANIZE/DELTA-GAME/site",
+	"sourceRoot": "/home/grant/delta-game/site",
 	"sources": [
 		"css/base.scss",
 		"assets/css/variables.scss",
