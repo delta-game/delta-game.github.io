@@ -33,10 +33,10 @@ Prerequisites Before you start, you need to make sure that you have the followin
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 &lt;p&gt;Before you start, you need to make sure that you have the following prerequisites installed:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GoLang 1.19 or later (you can download it &lt;a href=&#34;https://golang.org/dl/&#34;&gt;here&lt;/a&gt;). For Linux &lt;strong&gt;[1]&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;The defacto package-manager for your Operating-System.&lt;/li&gt;
+&lt;li&gt;GoLang 1.19 or later (you can download it &lt;a href=&#34;https://golang.org/dl/&#34;&gt;here&lt;/a&gt;). And for Linux &lt;strong&gt;[1]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The defacto package-manager (x repos) for your Operating-System.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;On Windows, Chocolatey is required to use the &lt;code&gt;depends&lt;/code&gt; command. You can download it from &lt;a href=&#34;https://chocolatey.org/install&#34;&gt;here&lt;/a&gt;. On MacOSX, Homebrew is required for the same reason. You can download it &lt;a href=&#34;https://brew.sh/&#34;&gt;here&lt;/a&gt;. On Linux, your distribution&amp;rsquo;s package manager is required to install the necessary packages. Right now, we officially support Apt via Debian and Ubuntu, Pacman via Arch, and Dnf via Fedora.&lt;/p&gt;
+&lt;p&gt;On Windows, Chocolatey is required to use the &lt;code&gt;depends&lt;/code&gt; command. You can download it from &lt;a href=&#34;https://chocolatey.org/install&#34;&gt;here&lt;/a&gt;. On MacOSX, Homebrew is required for the same reason. You can download it &lt;a href=&#34;https://brew.sh/&#34;&gt;here&lt;/a&gt;. On Linux, your distribution&amp;rsquo;s package manager is required to install the necessary packages. Right now, we officially support Apt via Debian and Ubuntu, Pacman via Arch, and Dnf via Fedora. If your Distro is not listed &amp;ndash; don&amp;rsquo;t fear, Distrobox is &lt;a href=&#34;https://github.com/89luca89/distrobox&#34;&gt;here&lt;/a&gt;! It&amp;rsquo;s pretty likely a package is already in your distro&amp;rsquo;s repos or one-degree from them. And at worst, it&amp;rsquo;s a curl pipe&amp;rsquo;d script and a path export or-two away.&lt;/p&gt;
 &lt;p&gt;Linux is the sole development platform that I use and while MacOSX is Unix-like enough where things should probably &amp;lsquo;just work&amp;rsquo; and has been confirmed early versions currently do &amp;ndash; I have no idea about Windows. So if this guide doesn&amp;rsquo;t work, it&amp;rsquo;s probably worth setting up WSL2 (Windows Subsystem for Linux 2) using the Debian image, which can be downloaded from the Microsoft Store, and trying that. You can learn more about setting up WSL2: &lt;a href=&#34;https://learn.microsoft.com/en-us/windows/wsl/install&#34;&gt;here&lt;/a&gt;, and download the Debian image: &lt;a href=&#34;https://www.microsoft.com/store/apps/9MSVKQC78PK6&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;[1]&lt;/strong&gt; On Linux, check your package-manager for a &amp;ldquo;go&amp;rdquo; or &amp;ldquo;golang&amp;rdquo; package. It should be availble on all supported distros.&lt;/p&gt;
 &lt;h2 id=&#34;step-1-download-the-latest-commit&#34;&gt;Step 1: Download The Latest Commit&lt;/h2&gt;
@@ -62,14 +62,14 @@ Prerequisites Before you start, you need to make sure that you have the followin
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;step-2-setting-up-magefiles&#34;&gt;Step 2: Setting Up Magefiles&lt;/h2&gt;
-&lt;p&gt;To build DELTΔ, we first need to set up Magefiles.&lt;/p&gt;
+&lt;p&gt;To build DELTΔ, we first need to set up the Magefile build-tool.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;We should already have GoLang installed and our terminal app opened. Now we need to run the following command, which will download and install the &lt;code&gt;magefile&lt;/code&gt; executable to our &lt;code&gt;$GOPATH&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;go install github.com/magefile/mage@latest
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;To view all user facing targets, run the following command:&lt;/p&gt;
+&lt;p&gt;To view all user facing targets, run the following command in our terminal:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mage help
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;

@@ -193,10 +193,10 @@ Prerequisites Before you start, you need to make sure that you have the followin
 <h2 id="prerequisites">Prerequisites<a href="#prerequisites" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Before you start, you need to make sure that you have the following prerequisites installed:</p>
 <ul>
-<li>GoLang 1.19 or later (you can download it <a href="https://golang.org/dl/">here</a>). For Linux <strong>[1]</strong></li>
-<li>The defacto package-manager for your Operating-System.</li>
+<li>GoLang 1.19 or later (you can download it <a href="https://golang.org/dl/">here</a>). And for Linux <strong>[1]</strong></li>
+<li>The defacto package-manager (x repos) for your Operating-System.</li>
 </ul>
-<p>On Windows, Chocolatey is required to use the <code>depends</code> command. You can download it from <a href="https://chocolatey.org/install">here</a>. On MacOSX, Homebrew is required for the same reason. You can download it <a href="https://brew.sh/">here</a>. On Linux, your distribution&rsquo;s package manager is required to install the necessary packages. Right now, we officially support Apt via Debian and Ubuntu, Pacman via Arch, and Dnf via Fedora.</p>
+<p>On Windows, Chocolatey is required to use the <code>depends</code> command. You can download it from <a href="https://chocolatey.org/install">here</a>. On MacOSX, Homebrew is required for the same reason. You can download it <a href="https://brew.sh/">here</a>. On Linux, your distribution&rsquo;s package manager is required to install the necessary packages. Right now, we officially support Apt via Debian and Ubuntu, Pacman via Arch, and Dnf via Fedora. If your Distro is not listed &ndash; don&rsquo;t fear, Distrobox is <a href="https://github.com/89luca89/distrobox">here</a>! It&rsquo;s pretty likely a package is already in your distro&rsquo;s repos or one-degree from them. And at worst, it&rsquo;s a curl pipe&rsquo;d script and a path export or-two away.</p>
 <p>Linux is the sole development platform that I use and while MacOSX is Unix-like enough where things should probably &lsquo;just work&rsquo; and has been confirmed early versions currently do &ndash; I have no idea about Windows. So if this guide doesn&rsquo;t work, it&rsquo;s probably worth setting up WSL2 (Windows Subsystem for Linux 2) using the Debian image, which can be downloaded from the Microsoft Store, and trying that. You can learn more about setting up WSL2: <a href="https://learn.microsoft.com/en-us/windows/wsl/install">here</a>, and download the Debian image: <a href="https://www.microsoft.com/store/apps/9MSVKQC78PK6">here</a>.</p>
 <p><strong>[1]</strong> On Linux, check your package-manager for a &ldquo;go&rdquo; or &ldquo;golang&rdquo; package. It should be availble on all supported distros.</p>
 <h2 id="step-1-download-the-latest-commit">Step 1: Download The Latest Commit<a href="#step-1-download-the-latest-commit" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
@@ -222,14 +222,14 @@ Prerequisites Before you start, you need to make sure that you have the followin
 </span></span></code></pre></div></li>
 </ol>
 <h2 id="step-2-setting-up-magefiles">Step 2: Setting Up Magefiles<a href="#step-2-setting-up-magefiles" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>To build DELTΔ, we first need to set up Magefiles.</p>
+<p>To build DELTΔ, we first need to set up the Magefile build-tool.</p>
 <ol>
 <li>
 <p>We should already have GoLang installed and our terminal app opened. Now we need to run the following command, which will download and install the <code>magefile</code> executable to our <code>$GOPATH</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go install github.com/magefile/mage@latest
 </span></span></code></pre></div></li>
 <li>
-<p>To view all user facing targets, run the following command:</p>
+<p>To view all user facing targets, run the following command in our terminal:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mage help
 </span></span></code></pre></div></li>
 </ol>
