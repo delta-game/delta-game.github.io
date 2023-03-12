@@ -20,6 +20,18 @@
     <loc>https://delta-game.github.io/refs/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://delta-game.github.io/refs/machines/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://delta-game.github.io/refs/pipes/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://delta-game.github.io/refs/terms/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://delta-game.github.io/refs/toids/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://delta-game.github.io/showcase/</loc>
     <priority>0</priority>
   </url><url>

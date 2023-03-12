@@ -177,45 +177,42 @@ Prerequisites Before you start, you need to make sure that you have the followin
     
     <item>
       <title></title>
-      <link>https://delta-game.github.io/refs/</link>
+      <link>https://delta-game.github.io/refs/machines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://delta-game.github.io/refs/</guid>
-      <description>Reference Booklet. This page serves as a comprehensive directory and index of the tools and components essential to mastering automation in DELTΔ. We understand that automation is often a complex, detailed oriented process &amp;ndash; which is why we&amp;rsquo;ve curated this extensive list of references to help you streamline your workflow and optimize pipelines in your world.
-Type Desc Pipes Used to transport items, fluids, power, and data between devices / storage.</description>
-      <content>&lt;h1 id=&#34;reference-booklet&#34;&gt;Reference Booklet.&lt;/h1&gt;
-&lt;p&gt;This page serves as a comprehensive directory and index of the tools and components essential to mastering automation in DELTΔ.
-We understand that automation is often a complex, detailed oriented process &amp;ndash; which is why we&amp;rsquo;ve curated this extensive list of references to help you streamline your workflow and optimize pipelines in your world.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Desc&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://delta-game.github.io/refs/pipes&#34;&gt;Pipes&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Used to transport items, fluids, power, and data between devices / storage.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://delta-game.github.io/refs/machines&#34;&gt;Machines&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Various automatable devices used for processing, refining, and crafting.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://delta-game.github.io/refs/terms&#34;&gt;Terminals&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;A way to interface with, manage, and monitor our automated pipelines.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://delta-game.github.io/refs/toids&#34;&gt;Toids&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Small, programmable entities that can move around and peform tasks.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Please note that this page is very much a work-in-progress, and the information presented here is subject to change without notice. If you encounter any issues with the components or tools indexed here, please ensure that they were officially added upstream prior. This is important to check, because we&amp;rsquo;re using this space as a provisional area to present components that we&amp;rsquo;re (strongly) considering implementing, rather than a definitive list of what is currently available in-game. Thank you for your understanding as we continue to develop and improve DELTΔ . Hopefully this page helps to present &amp;ldquo;the direction&amp;rdquo; we&amp;rsquo;re aiming at.&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
+      <guid>https://delta-game.github.io/refs/machines/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://delta-game.github.io/refs/pipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta-game.github.io/refs/pipes/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://delta-game.github.io/refs/terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta-game.github.io/refs/terms/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://delta-game.github.io/refs/toids/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta-game.github.io/refs/toids/</guid>
+      <description></description>
+      <content></content>
     </item>
     
     <item>
