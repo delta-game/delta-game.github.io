@@ -22,6 +22,57 @@
     
     <item>
       <title></title>
+      <link>https://delta-game.github.io/meta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://delta-game.github.io/meta/</guid>
+      <description>METΔ Internal / Self-Referential Documentation For DELTΔ All sourced from https://github.com/delta-game/meta;
+WARNING: If you don&amp;rsquo;t have dark-mode on &amp;ndash; be aware, you fill be flash-banged clicking these links!
+Type Desc The Devlog Our log and/or journal of our development progress on Δ The Design Docs Our documents outlining the design and specifications of Δ The Mind Map Our visualization of the various ideas and concepts for Δ The Roadmap Our plan and/or timeline for the development of Δ The News Our updates and announcements related to Δ Right now we&amp;rsquo;re linking to the more-or-less offsite (Github hosted) versions of these.</description>
+      <content>&lt;h1 id=&#34;metδ&#34;&gt;METΔ&lt;/h1&gt;
+&lt;h3 id=&#34;internal--self-referential-documentation-for-deltδ&#34;&gt;Internal / Self-Referential Documentation For DELTΔ&lt;/h3&gt;
+&lt;p&gt;All sourced from &lt;a href=&#34;https://github.com/delta-game/meta;&#34;&gt;https://github.com/delta-game/meta;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WARNING: If you don&amp;rsquo;t have dark-mode on &amp;ndash; be aware, you fill be flash-banged clicking these links!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Desc&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/delta-game/meta/blob/main/log/dev.md&#34;&gt;The Devlog&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Our log and/or journal of our development progress on Δ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/delta-game/meta/blob/main/design/docs.md&#34;&gt;The Design Docs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Our documents outlining the design and specifications of Δ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/delta-game/meta/blob/main/mind/map.md&#34;&gt;The Mind Map&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Our visualization of the various ideas and concepts for Δ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/delta-game/meta/blob/main/road/map.md&#34;&gt;The Roadmap&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Our plan and/or timeline for the development of Δ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/delta-game/meta/blob/main/news/ups.md&#34;&gt;The News&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Our updates and announcements related to Δ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Right now we&amp;rsquo;re linking to the more-or-less offsite (Github hosted) versions of these. Ideally, I&amp;rsquo;d like to figure a way where these will be hosted on-site via some shortcode wizardry (and maybe some JS). I think I&amp;rsquo;m going to have to have it automagically translate the markdown file from the &amp;lsquo;raw&amp;rsquo; &amp;ldquo;githubusercontent.com&amp;rdquo; url to a local html file on-the-fly and probably redirect any links it finds to use the /meta folder as the new top-level directory. But idk, just kinda tossing ideas around (ie: haven&amp;rsquo;t actually looked into it all) lol.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://delta-game.github.io/play/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
